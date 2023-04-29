@@ -202,10 +202,9 @@
   color: white;
 }
 form {
-  max-width: 300px;
+  width: 50%;
   margin: 0 auto;
 }
-
 label {
   display: block;
   margin-bottom: 0.5em;
@@ -230,22 +229,10 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
 }
-
-@media (min-width: 768px) {
+@media only screen and (max-width: 600px) {
   form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  label,
-  input,
-  textarea {
-    flex-basis: 48%;
-  }
-  
-  input[type="submit"] {
-    flex-basis: 100%;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
